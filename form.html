@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Admission Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 25px 35px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 10px;
+            width: 80px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            transition: 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #6a5acd;
+            outline: none;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .gender, .payment-options, .checkbox-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .section-title {
+            margin-top: 25px;
+            font-size: 18px;
+            color: #6a5acd;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 12px;
+            width: 100%;
+            background: linear-gradient(135deg, #6a5acd, #00c9a7);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h2>Experiment 9.2: Engineering Admission Form</h2>
+<h3>Name:- Arpita Vijay Shinde</h3>
+<h3>Roll No:- 32 </h3>
+<h3>            STD :S.Y (CSE-A)</h3>
+
+<div class="container">
+    <h1>D.Y. Patil College of Engineering, Kolhapur</h1>
+    <h2 style="text-align:center; color:#666; margin-top:5px;"> Admission Form</h2>
+
+    <form>
+        <div class="section-title">Personal Details</div>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <div class="row">
+            <div>
+                <label>Date of Birth</label>
+                <input type="date" required>
+            </div>
+            <div>
+                <label>Gender</label>
+                <div class="gender">
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                </div>
+            </div>
+        </div>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter mobile number" required>
+
+        <label>Address</label>
+        <textarea rows="3" placeholder="Enter address"></textarea>
+
+        <div class="section-title">Course Details</div>
+
+        <label>Course</label>
+        <select required>
+            <option value="">Select Course</option>
+            <option>Computer Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Civil Engineering</option>
+            <option>Electrical Engineering</option>
+            <option>Electronics Engineering</option>
+        </select>
+
+        <label>12th Percentage</label>
+        <input type="number" placeholder="Enter percentage" required>
+
+        <div class="section-title">Documents</div>
+        <label>Upload Documents</label>
+        <input type="file">
+
+        <div class="section-title">Payment Details</div>
+        <label>Select Payment Method</label>
+        <div class="payment-options">
+            <label><input type="radio" name="payment"> UPI</label>
+            <label><input type="radio" name="payment"> Credit Card</label>
+            <label><input type="radio" name="payment"> Debit Card</label>
+            <label><input type="radio" name="payment"> Net Banking</label>
+        </div>
+
+        <label>Transaction ID</label>
+        <input type="text" placeholder="Enter transaction ID">
+
+        <div class="section-title">Declaration</div>
+        <div class="checkbox-group">
+            <label><input type="checkbox" required> I confirm that all details are correct</label>
+            <label><input type="checkbox"> I agree to terms & conditions</label>
+        </div>
+
+        <button class="btn" type="submit">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>

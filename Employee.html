@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration | Admin Portal</title>
+    <style>
+        :root {
+            --primary-blue: #2563eb;
+            --bg-gray: #f8fafc;
+            --text-dark: #1e293b;
+            --border-color: #cbd5e1;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg-gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            color: var(--text-dark);
+        }
+
+        .form-container {
+            background: white;
+            width: 100%;
+            max-width: 800px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-header {
+            border-bottom: 2px solid var(--bg-gray);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        .form-header h2 {
+            margin: 0;
+            color: var(--primary-blue);
+        }
+
+        /* Grid Layout for Form */
+        .registration-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 15px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        input:focus, select:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        /* Radio & Checkbox Styling */
+        .radio-group {
+            display: flex;
+            gap: 15px;
+            padding: 10px 0;
+        }
+
+        .radio-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .btn-submit {
+            grid-column: span 2;
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #1d4ed8;
+        }
+
+        @media (max-width: 600px) {
+            .registration-form {
+                grid-template-columns: 1fr;
+            }
+            .full-width {
+                grid-column: span 1;
+            }
+            .btn-submit {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body><h2>Experiment 9.1: Employee Registration Form</h2>
+<h3>Name:- Arpita Vijay Shinde</h3>
+<h3>Roll No:- 32 </h3>
+<h3> STD :S.Y (CSE-A)</h3>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Employee Registration Form</h2>
+            <p>Enter official details to create a new staff account.</p>
+        </div>
+
+        <form class="registration-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter first name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter last name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Official Email</label>
+                <input type="email" id="email" name="email" placeholder="email@college.edu" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="98XXXXXXXX" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dept">Department</label>
+                <select id="dept" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="CSE">Computer Science</option>
+                    <option value="IT">Information Technology</option>
+                    <option value="MECH">Mechanical</option>
+                    <option value="CIVIL">Civil Engineering</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="role">Designation</label>
+                <input type="text" id="role" name="designation" placeholder="e.g. Assistant Professor" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <div class="radio-item"><input type="radio" name="gender" value="male" id="male"> <label for="male">Male</label></div>
+                    <div class="radio-item"><input type="radio" name="gender" value="female" id="female"> <label for="female">Female</label></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Joining</label>
+                <input type="date" id="doj" name="doj" required>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="address">Residential Address</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter full address"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Register Employee</button>
+        </form>
+    </div>
+
+</body>
+</html>

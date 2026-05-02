@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DYPCET Timetable - SY-A Full</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; padding: 20px; color: #000; }
+        .border-container { 
+            border: 2px solid #000; 
+            padding: 15px; 
+            max-width: 1100px; 
+            margin: auto; 
+        }
+        
+        .header { text-align: center; margin-bottom: 10px; }
+        .header h1 { font-size: 18px; margin: 0; }
+        .header h2 { font-size: 16px; margin: 0; }
+        
+        table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+        th, td { border: 1px solid #000; padding: 8px 4px; text-align: center; font-size: 11px; }
+        
+        th { background-color: #f2f2f2; }
+
+        /* Blank vertical BREAK column */
+        .break-cell { 
+            width: 25px; 
+            background-color: #ffffff;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+
+        .lab-data { text-align: left; font-size: 9.5px; line-height: 1.2; padding-left: 5px; }
+        .day-column { font-weight: bold; width: 85px; background-color: #f2f2f2; }
+        
+        .footer { margin-top: 15px; font-weight: bold; font-size: 13px; text-align: left; }
+    </style>
+</head>
+<body>
+    <h2>Experiment 8.1: Time Table Generator in HTML</h2>
+<h3>Name:- Arpita Vijay Shinde</h3>
+<h3>Roll No:- 32 </h3>
+<h3>            STD :S.Y (CSE-A)</h3>
+
+<div class="border-container">
+    <div class="header">
+        <h1>D. Y. Patil College of Engineering & Technology, Kolhapur</h1>
+        <h2>Department of Computer Science & Engineering</h2>
+        <h2>SY-A Full Time Table</h2>
+        <p><strong>Time Table 2025-2026 (SEM-II)</strong></p>
+    </div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th class="day-column">Day & Time</th>
+                <th>9.00 to 10.00</th>
+                <th>10.00 to 11.00</th>
+                <th class="break-cell" rowspan="7">BREAK</th>
+                <th>11.15 to 12.15</th>
+                <th>12.15 to 1.15</th>
+                <th class="break-cell" rowspan="7">BREAK</th>
+                <th>2.00 to 3.00</th>
+                <th>3.00 to 4.00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="day-column">Monday</td>
+                <td colspan="2" class="lab-data">
+                    
+                    S1-DSL(P) AMP-Lab G405C<br>S2-AOOC(P) PVK-Lab G207<br>S3-TPMS(P) PRP-Lab G406<br>
+                    S4-WD(P) SSKore-Lab G106<br>S5-TTL(P) SSM-Lab G205<br>S6-TTL(P) RVD-Lab G206
+                </td>
+                 <td> </td>
+
+                <td>AOOC(L)   <br>PVK</td>
+                <td>MDM-II(L)<br>NAH</td>
+                 <td> </td>
+                <td>DSL(L)<br>AMP</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td class="day-column">Tuesday</td>
+                <td colspan="2" class="lab-data">
+                    S1-TTL(P) RVD-Lab G105<br>S2-DSL(P) AMP-Lab G405C<br>S3-AOOC(P) PVK-Lab G207<br>
+                    S4-TPMS(P) PRP-Lab G406<br>S5-WD(P) SSKore-Lab G106<br>S6-TTL(P) PRG-Lab G103
+                </td>
+                <td> </td>
+                <td>AT(L)<br>KAB</td>
+                <td>DSL(L)<br>AMP</td>
+                <td> </td>
+                <td>WD(L)<br>SSKore</td>
+                <td>ENV(L)</td>
+            </tr>
+            <tr>
+                <td class="day-column">Wednesday</td>
+                <td colspan="2" class="lab-data">
+                    S1-TTL(P) PRG-Lab G205<br>S2-TTL(P) RVD-Lab B201A<br>S3-DSL(P) AMP-Lab G405C<br>
+                    S4-AOOC(P) PVK-Lab G207<br>S5-TPMS(P) PRP-Lab G406<br>S6-WD(P) SSKore-Lab G106
+                </td>
+                <td> </td>
+                <td>AOOC(L)<br>PVK</td>
+                <td>MDM-II(L)<br>NAH</td>
+                <td> </td>
+                <td>DSL(L)<br>AMP</td>
+                <td>ENV(L)</td>
+            </tr>
+            <tr>
+                <td class="day-column">Thursday</td>
+                <td colspan="2" class="lab-data">
+                    S1-WD(P) SSKore-Lab G106<br>S2-TTL(P) VSP-Lab G101<br>S3-TTL(P) RVD-Lab G103<br>
+                    S4-DSL(P) AMP-Lab G405C<br>S5-AOOC(P) PVK-Lab G207<br>S6-TPMS(P) PRP-Lab G406
+                </td>
+                <td> </td>
+                <td>AT(L)<br>KAB</td>
+                <td>AT(L)<br>KAB</td>
+
+                <td></td>
+                <td>-</td>
+                <td>OEC-II(L)</td>
+            </tr>
+            <tr>
+                <td class="day-column">Friday</td>
+                <td colspan="2" class="lab-data">
+                    S1-TPMS(P) PRP-Lab G406<br>S2-WD(P) SSKore-Lab G106<br>S3-TTL(P) SSM-Lab B201B<br>
+                    S4-TTL(P) RVD-Lab B201A<br>S5-DSL(P) AMP-Lab G405C<br>S6-AOOC(P) PVK-Lab G105
+                </td>
+                <td></td>
+                <td colspan="3" class="lab-data">
+                    S1-AOOC(P) PVK-Lab G207<br>S2-TPMS(P) PRP-Lab G406<br>S3-WD(P) SSKore-Lab G106<br>
+                    S4-TTL(P) SDK-Lab G103<br>S5-TTL(P) RVD-Lab G101<br>S6-DSL(P) AMP-Lab G405C
+                </td>
+                <td>TPMS(L)<br>PRP</td>
+                <td>OEC-II(L)</td>
+            </tr>
+            <tr>
+                <td class="day-column">Saturday</td>
+                <td colspan="2">LLC-PRP</td>
+                <td> </td>
+                 <td colspan="3">LLC-PRP</td>
+                 <td> </td>
+            
+
+            </tr>
+        </tbody>
+    </table>
+
+    
+</div>
+
+</body>
+</html>
