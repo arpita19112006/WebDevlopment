@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Technology Journal</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            padding: 20px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            min-height: 100vh;
+            margin: 0;
+        }
+        .dashboard { 
+            max-width: 1200px; 
+            margin: auto; 
+            background: rgba(255, 255, 255, 0.95); 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+            backdrop-filter: blur(10px);
+        }
+        h1 { 
+            text-align: center; 
+            color: #2c3e50; 
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .experiments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+        .experiment-card {
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+        }
+        .experiment-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #3498db, #2ecc71, #e74c3c, #f39c12);
+        }
+        .experiment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-color: #3498db;
+        }
+        .experiment-card a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: block;
+            transition: color 0.3s ease;
+        }
+        .experiment-card a:hover {
+            color: #3498db;
+        }
+        .experiment-number {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+        .decorative-shape {
+            position: absolute;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        .square {
+            width: 50px;
+            height: 50px;
+            background: #3498db;
+            border-radius: 0;
+            top: 10px;
+            right: 10px;
+        }
+        .rectangle {
+            width: 80px;
+            height: 30px;
+            background: #e74c3c;
+            border-radius: 0;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+        <h1>Web Development Experiments</h1>
+        <div class="info">
+            <b>Name:</b> Arpita Vijay Shinde <br> <b>Roll No:</b> 32 <br> <b>Class:</b> SY - A <br> <b>Batch:</b> 2025-2026<br><b>Department :</b> computer Science & Engineering
+
+        </div>
+        <hr>
+        <ul class="experiments-grid">
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 2</div>
+                <a href="../StaticWebPageP2.html">Static Web Page</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 3</div>
+                <a href="../TextformattingTagsP3.html">Text Formatting</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 4.1</div>
+                <a href="../ListTagsP3.html">HTML List tags</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 4.2</div>
+                <a href="../NestedListP3.html">HTML Nested List tags</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 5</div>
+                <a href="../imageTagP5.html">HTML Image Tag</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 6</div>
+                <a href="../iframe.html">HTML Iframe Tag</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 7</div>
+                <a href="../createLink.html">HTML Link Tag</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 8.1</div>
+                <a href="../timetaable.html">Time Table</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 8.2</div>
+                <a href="../MarksheetTable.html">Marksheet Table</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 9.1</div>
+                <a href="../Employee.html">Employee Registration Form</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 9.2</div>
+                <a href="../form.html">Engineering Admission Form</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 10.1</div>
+                <a href="../exResume.html">Professional Resume with External CSS</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 10.2</div>
+                <a href="../resume.html">Professional Resume with Internal CSS</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 11</div>
+                <a href="../Experiment 11/students.xml">implementation of XML</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 12</div>
+                <a href="../Experiment 12/cat.xml">Transform XML to XSLT</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Experiment 13</div>
+                <a href="../Experiment 13/students.xml"> XSLT and Coditional Statements</a>
+            </li>
+            <li class="experiment-card">
+                <div class="decorative-shape square"></div>
+                <div class="decorative-shape rectangle"></div>
+                <div class="experiment-number">Website Development</div>
+                <a href="../JOB PORTAL WEBSITE/index.html">JOB Portal website</a>
+            </li>
+
+        </ul>
+    </div>
+
+</body>
+</html>
