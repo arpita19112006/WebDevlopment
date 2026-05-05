@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Technology Journal</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            padding: 20px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            min-height: 100vh;
+            margin: 0;
+        }
+        .dashboard { 
+            max-width: 1200px; 
+            margin: auto; 
+            background: rgba(255, 255, 255, 0.95); 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 { 
+            text-align: center; 
+            color: #2c3e50; 
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .experiments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .experiment-card {
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .experiment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .experiment-card a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .experiment-card a:hover {
+            color: #3498db;
+        }
+
+        .experiment-number {
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        .experiment-icon {
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="dashboard">
+    <h1>Web Development Experiments</h1>
+
+    <div class="info">
+        <b>Name:</b> Arpita Vijay Shinde <br> 
+        <b>Roll No:</b> 32 <br> 
+        <b>Class:</b> SY - A <br> 
+        <b>Batch:</b> 2025-2026<br>
+        <b>Department :</b> Computer Science & Engineering
+    </div>
+
+    <hr>
+
+    <ul class="experiments-grid">
+        <li class="experiment-card">
+            <div class="experiment-icon">🌐</div>
+            <div class="experiment-number">Experiment 2</div>
+            <a href="./StaticWebPageP2.html">Static Web Page</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">📝</div>
+            <div class="experiment-number">Experiment 3</div>
+            <a href="./TextformattingTagsP3.html">Text Formatting</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">📋</div>
+            <div class="experiment-number">Experiment 4.1</div>
+            <a href="./ListTagsP3.html">HTML List tags</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">📋</div>
+            <div class="experiment-number">Experiment 4.2</div>
+            <a href="./NestedListP3.html">HTML Nested List tags</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">🖼️</div>
+            <div class="experiment-number">Experiment 5</div>
+            <a href="./imageTagP5.html">HTML Image Tag</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">🔳</div>
+            <div class="experiment-number">Experiment 6</div>
+            <a href="./iframe.html">HTML Iframe Tag</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">🔗</div>
+            <div class="experiment-number">Experiment 7</div>
+            <a href="./createLink.html">HTML Link Tag</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">📅</div>
+            <div class="experiment-number">Experiment 8.1</div>
+            <a href="./timetaable.html">Time Table</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">📊</div>
+            <div class="experiment-number">Experiment 8.2</div>
+            <a href="./MarksheetTable.html">Marksheet Table</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">👤</div>
+            <div class="experiment-number">Experiment 9.1</div>
+            <a href="./Employee.html">Employee Registration Form</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">📋</div>
+            <div class="experiment-number">Experiment 9.2</div>
+            <a href="./form.html">Engineering Admission Form</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">📄</div>
+            <div class="experiment-number">Experiment 10.1</div>
+            <a href="./exResume.html">Resume (External CSS)</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">📄</div>
+            <div class="experiment-number">Experiment 10.2</div>
+            <a href="./resume.html">Resume (Internal CSS)</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">🔄</div>
+            <div class="experiment-number">Experiment 11</div>
+            <a href="./Experiment 11/students.xml">XML</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">🔄</div>
+            <div class="experiment-number">Experiment 12</div>
+            <a href="./Experiment 12/cat.xml">XSLT</a>
+        </li>
+
+        <li class="experiment-card">
+            <div class="experiment-icon">🔄</div>
+            <div class="experiment-number">Experiment 13</div>
+            <a href="./Experiment 13/students.xml">XSLT Conditions</a>
+        </li>
+
+        
+    </ul>
+</div>
+
+</body>
+</html>
